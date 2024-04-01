@@ -72,5 +72,7 @@ class _BotCommands:
         self.ClearLocalsCommand = f'clearlocals{CMD_SUFFIX}'
         self.LimitCommand = getCommand(f'LIMIT_COMMAND', f'limit{CMD_SUFFIX}')
         self.DriveCleanCommand = getCommand(f'DRIVECLEAN_COMMAND', f'driveclean{CMD_SUFFIX}')
+        self.MLocalUploadCommand = f'mupload{CMD_SUFFIX}'
+        self.LLocalUploadCommand = f'lupload{CMD_SUFFIX}'
 
 BotCommands = _BotCommands()
