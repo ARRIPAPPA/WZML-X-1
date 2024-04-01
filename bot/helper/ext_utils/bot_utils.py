@@ -74,6 +74,7 @@ class EngineStatus:
         STATUS_SPLIT_MERGE = "FFmpeg"
         STATUS_ZIP = f"p7zip"
         STATUS_QUEUE = "Sleep"
+        STATUS_LOCAL = "Local"
 
     
 SIZE_UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
