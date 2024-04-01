@@ -257,7 +257,7 @@ def get_readable_message():
             else:
                 msg += f"<b><a href='{download.message.link}'>{download.status()}</a>: </b>"
                 msg += f"<code>{escape(str(download.name()))}</code>"
-            if download.status() not in [MirrorStatus.STATUS_SEEDING, MirrorStatus.STATUS_SPLITTING, MirrorStatus.STATUS_CONVERTING, MirrorStatus.STATUS_QUEUEDL, MirrorStatus.STATUS_QUEUEUP]:
+            if download.status() not in [MirrorStatus.STATUS_SEEDING, MirrorStatus.STATUS_SPLITTING, MirrorStatus.STATUS_CONVERTING, MirrorStatus.STATUS_QUEUEDL, MirrorStatus.STATUS_QUEUEUP, MirrorStatus.STATUS_LOCAL]:
                 if config_dict['EMOJI_THEME']:
                     msg += f"\n<b></b>{get_progress_bar_string(download)} {download.progress()}"
                     msg += f"\n<b>🔄 Done:</b> {get_readable_file_size(download.processed_bytes())} of {download.size()}"
